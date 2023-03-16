@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of ByteAudio-18</title>
+    <style>
+        body {
+            width: 60%;
+            margin: 0 auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Title: A Progressive Neural Network for Acoustic Echo Cancellation</h1>
+    <h2>Authors: Zhuangqi Chen, Xianjun Xia, Siyu Sun, Ziqian Wang, Cheng Chen, Guoliang Xie, Pingjian Zhang, Yijian Xiao</h1>
+    <br />
+    <h2>Abstract:</h2>
+    <p>Acoustic echo cancellation is a key issue in hand-free communication systems. In this paper, we proposed a hybrid signal processing and deep echo cancellation method, where a two-stage neural network is designed to remove residual echo progressively. For the personalized acoustic echo cancellation, we proposed to decouple the tasks of echo cancellation and target speech extraction, and introduced a speaker attentive module for personalized separation, where the ECAPA-TDNN is used for speaker embedding generation. The proposed method (ByteAudio-18) ranked first on both Track 1 and Track 2 in ICASSP 2023 AEC Challenge.</p>
+    <br />
+    <h2>Examples:</h2>
+    <table>
+        <tr>
+            <td>scenario</td>
+            <td>microphone signal</td>
+            <td>estimated target speech</td>
+        </tr>
+        <tr>
+            <td>
+                nearend single-talk
+            </td>
+            <td>
+                <img src="demo/nst_mic.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/nearend_single-talk_mic.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <img src="demo/nst_est.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/nearend_single-talk_est.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               farend single-talk
+            </td>
+            <td>
+                <img src="demo/fst_mic.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/farend_single-talk_mic.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <img src="demo/fst_est.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/farend_single-talk_est.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                double-talk 01
+            </td>
+            <td>
+                <img src="demo/dt_mic.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/double-talk_mic.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <img src="demo/dt_est.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/double-talk_est.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                double-talk 02
+            </td>
+            <td>
+                <img src="demo/dt_mic02.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/double-talk_mic02.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <img src="demo/dt_est02.png" alt="Image description" width="300" height="200">
+                <br/>
+                <audio controls>
+                    <source src="demo/double-talk_est02.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
